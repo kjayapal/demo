@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: configserver
+  profiles:
+    active: dev,qa,prod
+  
