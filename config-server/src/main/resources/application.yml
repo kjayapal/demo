@@ -7,5 +7,5 @@ spring:
       name: configserver
       server:
         git:
-          uri: file:///F:/MyProjects/java/git-repo
+          uri: ${__CONFIG_REPO:file:///F:/MyProjects/java/git-repo}
                

@@ -1,9 +1,11 @@
 spring:
   application:
     name: demoapp
+  profiles:
+    active: ${__ENV:dev}
   cloud:
     config:
-      uri: ${CONFIG_SERVER_URL:http://localhost:8888/}
+      uri: ${__CONFIG_SERVER_URL:http://localhost:8888/}
 
 management:
   security:
