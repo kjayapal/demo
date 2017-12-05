@@ -50,6 +50,7 @@
 	<modules>
 		<module>config-server</module>
 		<module>app</module>
+	  	<module>product-service</module>
 	</modules>
 	<dependencyManagement>
 		<dependencies>

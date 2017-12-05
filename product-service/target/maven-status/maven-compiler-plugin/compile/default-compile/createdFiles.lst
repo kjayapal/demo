@@ -1,0 +1,9 @@
+com\demo\mongodb\bl\MyService.class
+com\demo\HelloController.class
+com\demo\mongodb\bl\impl\MyServiceImpl.class
+com\demo\mongodb\data\Product.class
+com\demo\mongodb\api\request\ServiceRequest.class
+com\demo\mongodb\config\MyConfigurationProperties.class
+com\demo\mongodb\data\ProductRepository.class
+com\demo\DemoServiceApp.class
+com\demo\mongodb\api\response\ServiceResponse.class
