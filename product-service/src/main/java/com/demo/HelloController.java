@@ -24,10 +24,10 @@ public class HelloController {
 	@Autowired
 	private MyService myservice;
 	
-	@RequestMapping("/dummy")
+	@RequestMapping("/")
 	public String getDummy() 
 	{
-		return "DUMMY REQ";
+		return "WELCOME TO DEMO SERVICE";
 	}
 
 	@RequestMapping("/demo")
