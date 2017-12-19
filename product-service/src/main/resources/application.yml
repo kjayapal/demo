@@ -4,9 +4,16 @@ server:
 spring:
   application:
     name: demo-service  
+  data:
+    mongodb:
+      #repositories:
+      #  enabled: true
+      #uri: mongodb://traine:training123@pfol-mongodb01-qa.ftdi.com:27017/training 
+      uri: ${__MONGO_DB_URL:mongodb://test-container.hyd.ftd.com:17017/local}
   
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+      defaultZone: ${__EUREKA_URL:http://localhost:8761/eureka}
+ 
  

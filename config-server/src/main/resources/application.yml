@@ -7,5 +7,5 @@ spring:
       name: configserver
       server:
         git:
-          uri: ${__CONFIG_REPO:file:///C:/Users/kjayapal/git/config-data}
+          uri: ${__CONFIG_REPO:https://github.com/kjayapal/config-data}
                

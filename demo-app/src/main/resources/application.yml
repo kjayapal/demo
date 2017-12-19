@@ -1,0 +1,12 @@
+server:
+  port: 8080
+  tomcat:
+    accesslog:
+      enabled: true
+      directory: "${__LOGS_DIR:C:\\Users\\kjayapal\\git\\demo\\demo-app\\logs}"
+ 
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${__EUREKA_URL:http://test-container.hyd.ftd.com:6761/eureka}
+ 

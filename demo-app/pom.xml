@@ -3,11 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>com.demo</groupId>
-		<artifactId>demo-app</artifactId>
+		<artifactId>demo</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>app</artifactId>
-	<name>app</name>
+	<artifactId>demo-app</artifactId>
+	<name>demo-app</name>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>

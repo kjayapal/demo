@@ -1,5 +1,6 @@
 package com.demo.app;
 
+import java.net.InetAddress;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -38,6 +39,12 @@ public class HelloController {
 		return this.message;
 	}
 	
+	@RequestMapping ("/host")
+	public String host()
+	{
+		return this.getHostName();
+	}
+	
 //	@RequestMapping("/service-instances/{applicationName}")
 //    public List<ServiceInstance> serviceInstancesByApplicationName(@PathVariable String applicationName) {
 //        return this.discoveryClient.getInstances(applicationName);
@@ -60,6 +67,20 @@ public class HelloController {
 		
 		return response;
     }
+	
+	public String getHostName() {
+		try
+		{
+		    InetAddress addr;
+		    addr = InetAddress.getLocalHost();
+		    return addr.getHostName();
+		}
+		catch (Exception ex)
+		{
+		    System.out.println("Hostname can not be resolved");
+		}
+		return "";		
+	}
 	
 //	@LoadBalanced
 	@Bean
