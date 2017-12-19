@@ -69,7 +69,7 @@
 	<packaging>pom</packaging>
 	<modules>
 		<module>config-server</module>
-		<module>app</module>
+		<module>demo-app</module>
 	  	<module>product-service</module>
 	</modules>
 	<dependencyManagement>
